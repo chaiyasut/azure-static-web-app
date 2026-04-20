@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub - Your Premium Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ShopHub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="cart-icon">🛒 Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to ShopHub</h2>
+            <p>Discover Premium Products at Unbeatable Prices</p>
+            <button class="cta-button" onclick="scrollToSection('products')">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products-section">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">📱</div>
+                <h3>Premium Gadgets</h3>
+                <p>Latest technology at your fingertips</p>
+                <span class="price">$99.99</span>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👕</div>
+                <h3>Fashion Collection</h3>
+                <p>Trendy styles for every occasion</p>
+                <span class="price">$49.99</span>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <h3>Footwear</h3>
+                <p>Comfort meets style</p>
+                <span class="price">$79.99</span>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">⌚</div>
+                <h3>Accessories</h3>
+                <p>Complete your look</p>
+                <span class="price">$34.99</span>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">🎧</div>
+                <h3>Audio Equipment</h3>
+                <p>Crystal clear sound quality</p>
+                <span class="price">$129.99</span>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">💼</div>
+                <h3>Business Essentials</h3>
+                <p>Professional and practical</p>
+                <span class="price">$89.99</span>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Why Choose ShopHub?</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🚚 Fast Shipping</h3>
+                    <p>Free shipping on orders over $50</p>
+                </div>
+                <div class="feature">
+                    <h3>✅ Quality Guarantee</h3>
+                    <p>100% authentic products</p>
+                </div>
+                <div class="feature">
+                    <h3>🔒 Secure Payment</h3>
+                    <p>Safe and encrypted transactions</p>
+                </div>
+                <div class="feature">
+                    <h3>💰 Best Prices</h3>
+                    <p>Competitive pricing and regular discounts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive deals and updates</p>
+        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <p>📧 Email: hello@shophub.com</p>
+            <p>📞 Phone: 1-800-SHOPHUB</p>
+            <p>📍 Address: 123 Shop Street, Commerce City, CC 12345</p>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
